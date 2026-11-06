@@ -1,83 +1,79 @@
-# Maize AMF network embedding research archive
+# Maize–AMF Network Embedding
 
-Supporting code and simulation data for **In Silico Optimization of Zea mays–Arbuscular Mycorrhizal Fungi Networks: A Hyperbolic Embedding Framework for Modeling Nutrient Uptake Dynamics**.
+**A computational comparison of Poincaré, MDS, and spectral representations of coupled maize root–fungus networks.**
 
-## Start here
+Raven V. Santos · Akhira S. Manlangit · Erra Nicole F. De Guzman  
+Research adviser: John Dave T. Bonilla
 
-- [Experiment implementation](EXP.py) — original desktop source, unchanged.
-- [Statistical analysis implementation](STATS.py) — original desktop source, unchanged.
-- [Complete 17,550-row simulation results](FINAL_EXP_RESULTS.csv).
-- [Data dictionary](DATA_DICTIONARY.md).
-- [Consolidated statistical report](STATISTICAL_REPORT.txt).
-- [Download the statistical figures](statistical_figures.zip).
-- [File checksums](SHA256SUMS.txt).
+This repository accompanies our study, *In Silico Optimization of Zea mays–Arbuscular Mycorrhizal Fungi Networks: A Hyperbolic Embedding Framework for Modeling Nutrient Uptake Dynamics*.
 
-The CSV is the complete model-run output, not raw physiological measurements. It contains 78 RSML filenames × 5 scenarios × 3 dimensions × 3 methods × 5 seeds. Seed averaging gives 3,510 file-condition records. Repeated conditions and seeds do not increase the biological sample size.
+We investigate how embedding geometry and dimension affect the representation of maize root–AMF networks and the transport quantities computed from them. We provide our experiment code, complete simulation output, statistical analysis, and the files needed to inspect and reproduce the reported comparisons.
+
+## Explore the study
+
+| I want to… | Start here |
+|---|---|
+| Understand the experiment | [Methods and interpretation](METHODS.md) |
+| Download all 17,550 model runs | [Complete results CSV](FINAL_EXP_RESULTS.csv) |
+| Understand the data columns | [Data dictionary](DATA_DICTIONARY.md) |
+| Inspect the experiment | [EXP.py](EXP.py) |
+| Inspect the statistical analysis | [STATS.py](STATS.py) |
+| Run the analysis on my computer | [Reproduction guide](REPRODUCIBILITY.md) |
+| Find the statistical tables and figures | [Output catalogue](OUTPUTS.md) |
+| Access the manuscript appendices | [Appendix A and B resources](APPENDIX_LINKS.md) |
+
+## Study design
+
+| Component | Configuration |
+|---|---|
+| Root architecture files | 78 RSML/XML files from Wu's lateral-root dataset |
+| Environmental scenarios | Severe drought, moderate drought, normal, wet, very wet |
+| Embedding methods | Poincaré, multidimensional scaling, spectral embedding |
+| Embedding dimensions | 2, 16, 32 |
+| Stochastic seeds | 42, 123, 456, 789, 1011 |
+| Model-run records | 17,550 |
+| Seed-averaged file-condition records | 3,510 |
+
+We average the five stochastic runs within each file and experimental condition before inferential testing. These repeated conditions do not increase the number of root files or establish biological independence.
+
+## Main findings
+
+Across the archived results, MDS has the lowest mean relative reconstruction error (0.0978), while Poincaré has the lowest mean Stress (0.0656). MDS also has the highest mean edge-based transport preservation and simulated uptake-curve area. No method leads every evaluation criterion; the preferred representation depends on the quantity being preserved.
+
+![Mean relative reconstruction error across the five modeled scenarios in a two-dimensional embedding.](comparison_preview.png)
+
+*An example result from our archived statistical figures. Error bars show standard errors across seed-averaged file values.*
 
 ## Reproduce the statistical analysis
 
-Use Python in a new virtual environment. The dependencies below are requirements, not a recovered lockfile from the original experiment. The original Python/library versions and hardware were not recorded in these files, so bitwise reproduction of the experiment is not promised.
+After cloning or downloading this repository, install the analysis dependencies and run:
 
 ```bash
-python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# macOS/Linux: source .venv/bin/activate
-python -m pip install -r requirements-analysis.txt
+python -m pip install -r requirements-analysis-verified.txt
 python validate_data.py
 python run_analysis.py
+python verify_reproduction.py
 python run_sensitivity.py
 ```
 
-`run_analysis.py` executes the original STATS.py with repository-relative input and a separate output directory. It changes only the two path assignments in memory. Existing archived results and desktop files are not overwritten. Outputs go to `reproduced_analysis/`. The sensitivity script separately implements the paper's exact-MDS-output-signature grouping analysis and writes `reproduced_sensitivity/`; this is a robustness check, not confirmation that the groups are distinct biological samples.
+Use a virtual environment; platform-specific setup and full experiment instructions are in the [reproduction guide](REPRODUCIBILITY.md). New outputs are written separately from the archived results. We retain `EXP.py` and `STATS.py` as the original implementations and use portable launchers to supply local paths.
 
-## Re-run the embedding experiment
+## Data and interpretation
 
-Obtain Wu's *Lateral roots dataset*, version 5, from https://doi.org/10.6084/m9.figshare.4836890.v5 and extract the 78 matching XML/RSML files into a directory. [rsml_input_manifest.csv](rsml_input_manifest.csv) lists the exact source filenames and SHA-256 hashes used locally. Source root files are referenced at their original repository rather than redistributed here.
+Our root geometry comes from [Wu's Lateral roots dataset, version 5](https://doi.org/10.6084/m9.figshare.4836890.v5). The [input manifest](rsml_input_manifest.csv) records the 78 filenames and their checksums. We provide the synthetic AMF node and edge inputs with the repository.
 
-```bash
-python -m pip install -r requirements-experiment.txt
-python run_experiment.py --dataset-dir /path/to/rsml_inputs
-```
+The scenario labels represent parameterized model conditions. The resistance, flux, and uptake values are computational proxies, not measured physiological outcomes. The AMF network is synthetic. Our [methods notes](METHODS.md) describe these assumptions and the 69-group sensitivity analysis.
 
-This is a computationally intensive run. It writes to a new `rerun_results.csv`, using EXP.py's existing resume behavior. It never replaces the archived `FINAL_EXP_RESULTS.csv`. GPU/CPU differences, package versions, file provenance, and numerical defaults may affect output. The portable launcher preserves the original experiment functions and supplies explicit paths.
+## Verification
 
-## Inputs
+We reproduced all 12 archived statistical tables within the documented numerical tolerance and recovered the 69 exact MDS-output-signature groups used for sensitivity analysis. See [verification details](VALIDATION.md) for the environment and scope of these checks. The full embedding experiment has not been rerun as part of the repository verification.
 
-| File | Description |
-|---|---|
-| AMF_network_nodes.csv | Synthetic fungal nodes and supplied attributes |
-| AMF_network_edges.csv | Synthetic fungal network edges |
-| AMF_literature_parameters.csv | Accompanying parameter metadata; not directly read by EXP.py |
-| rsml_input_manifest.csv | Exact root input names and hashes; obtain originals from the dataset DOI |
+## Cite this work
 
-The AMF graph is a constructed computational input, not a reconstruction of observed microscopy. The modeled resistance, flux, and uptake quantities require physiological calibration.
+If you use our code or simulation output, please cite this repository and identify the release or commit you used. [CITATION.cff](CITATION.cff) provides the research team and repository metadata. Cite the original root dataset separately. [Appendix resources](APPENDIX_LINKS.md) include permanent links to the manuscript's original computational archive.
 
-## Archived statistical outputs
-
-| File | Description |
-|---|---|
-| 01_seed_level_summary.csv | Seed-level descriptive summary |
-| 02_file_level_seed_averaged_data.csv | 3,510 seed-averaged file-condition records |
-| 03_descriptive_statistics.csv | Grouped descriptive statistics |
-| 04_friedman_model_tests.csv | Model comparisons and Holm correction |
-| 05_pairwise_wilcoxon_model_tests.csv | Paired model contrasts and rank-biserial effects |
-| 06_dimension_friedman_tests.csv | Dimension comparisons |
-| 07_environment_friedman_tests.csv | Scenario comparisons |
-| 08_environmental_trends.csv | Within-file Spearman trends |
-| 09_poincare_curvature_summary.csv | Stored Poincare parameter summaries |
-| 10_metric_spearman_correlations.csv | Exploratory metric correlations |
-| 11_best_model_by_condition.csv | Metric-specific method rankings |
-| 12_pairwise_percent_improvements.csv | Descriptive percentage differences |
-| STATISTICAL_REPORT.txt | Consolidated original analysis report |
-
-All archived sources, inputs, results, and output tables are copied byte-for-byte from the supplied desktop files. Portable launchers, validation, documentation, manifests, and the standalone sensitivity script were added for sharing. No embedding experiment was rerun when preparing this archive. See VALIDATION.md for checks actually completed.
-
-## Citation and versioning
-
-For a paper submission, cite an immutable release or commit rather than only the changing main branch. A DOI-issuing archive such as Zenodo can preserve a repository release. No DOI has been minted for this archive yet. Retain the dataset's own DOI citation independently.
-
-Authors listed on the manuscript: Raven V. Santos, Akhira S. Manlangit, and Erra Nicole F. De Guzman. No publication year, journal acceptance, or original software environment is asserted here. No reuse license has been selected; public visibility alone does not grant an open-source license. Third-party data retains its source terms.
+Reuse permissions for this repository have not yet been specified by a license. Third-party data remains subject to its original terms.
 
 ## Research computing reference
 
-Wilson, G., et al. (2017). Good enough practices in scientific computing. *PLOS Computational Biology*, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+Our documentation and data-sharing practices are informed by Wilson et al. (2017), [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510), *PLOS Computational Biology*, 13(6), e1005510.

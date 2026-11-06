@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use our code or simulation results, please cite this repository and the original root dataset."
+type: software
+title: "Maize AMF Network Embedding"
+authors:
+  - family-names: Santos
+    given-names: "Raven V."
+  - family-names: Manlangit
+    given-names: "Akhira S."
+  - family-names: "De Guzman"
+    given-names: "Erra Nicole F."
+repository-code: "https://github.com/venyxion-oss/maize-amf-hyperbolic-embedding"
+url: "https://github.com/venyxion-oss/maize-amf-hyperbolic-embedding"
+abstract: "Code and simulation results comparing Poincare, multidimensional scaling, and spectral embedding for coupled Zea mays root-AMF networks."
+keywords:
+  - Zea mays
+  - arbuscular mycorrhizal fungi
+  - hyperbolic embedding
+  - computational plant biology
+  - reproducible research
