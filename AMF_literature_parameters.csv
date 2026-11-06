@@ -1,0 +1,6 @@
+parameter,value,unit,model_role
+AMF_species,Rhizophagus irregularis,text,fungal symbiont
+Host_species,Zea mays,text,host crop
+Reference_colonization,0.8,fraction,baseline model parameter
+Reference_hyphal_length_density,22.3,m g^-1 soil,baseline ERM density
+Topology_status,"synthetic, literature-calibrated",text,NOT observed microscopy topology

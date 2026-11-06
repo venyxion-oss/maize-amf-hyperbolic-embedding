@@ -1,0 +1,676 @@
+COUPLED ZEA MAYS–AMF EMBEDDING EXPERIMENT
+STATISTICAL ANALYSIS REPORT
+================================================================================
+
+EXPERIMENTAL UNIT
+The RSML/root-network file was treated as the independent experimental unit. The five seeds were treated as repeated stochastic runs and were averaged within each file × environment × dimension × model condition before inferential testing.
+
+Raw rows: 17550
+Unique files: 78
+Models: Poincare, MDS, Spectral
+Dimensions: 2, 16, 32
+Environments: severe_drought, moderate_drought, normal, wet, very_wet
+
+MODEL COMPARISONS — FRIEDMAN TEST
+--------------------------------------------------------------------------------
+Total tests: 165
+Significant after Holm correction: 150
+
+MRE | D=2 | severe_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+MRE | D=2 | moderate_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+MRE | D=2 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=2 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=2 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=16 | severe_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+MRE | D=16 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=16 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=16 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=16 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=32 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=32 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=32 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=32 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+MRE | D=32 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Raw_MRE | D=2 | severe_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Raw_MRE | D=2 | moderate_drought | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Raw_MRE | D=2 | normal | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Raw_MRE | D=2 | wet | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Raw_MRE | D=2 | very_wet | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Raw_MRE | D=16 | severe_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Raw_MRE | D=16 | moderate_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Raw_MRE | D=16 | normal | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Raw_MRE | D=16 | wet | Friedman statistic=148.4103 | Holm p=3.26201e-31
+Raw_MRE | D=16 | very_wet | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Raw_MRE | D=32 | severe_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Raw_MRE | D=32 | moderate_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Raw_MRE | D=32 | normal | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Raw_MRE | D=32 | wet | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Raw_MRE | D=32 | very_wet | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Stress | D=2 | severe_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Stress | D=2 | moderate_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Stress | D=2 | normal | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Stress | D=2 | wet | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Stress | D=2 | very_wet | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Stress | D=16 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Stress | D=16 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Stress | D=16 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Stress | D=16 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Stress | D=16 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Stress | D=32 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Stress | D=32 | moderate_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Stress | D=32 | normal | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Stress | D=32 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Stress | D=32 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Hierarchy | D=2 | severe_drought | Friedman statistic=72.3333 | Holm p=5.8903e-16
+Hierarchy | D=2 | moderate_drought | Friedman statistic=53.8462 | Holm p=2.02981e-12
+Hierarchy | D=2 | normal | Friedman statistic=64.6410 | Holm p=1.83827e-14
+Hierarchy | D=2 | wet | Friedman statistic=74.8462 | Holm p=2.65499e-16
+Hierarchy | D=2 | very_wet | Friedman statistic=89.1538 | Holm p=3.49606e-19
+Hierarchy | D=16 | severe_drought | Friedman statistic=74.9487 | Holm p=2.65499e-16
+Hierarchy | D=16 | moderate_drought | Friedman statistic=98.5385 | Holm p=5.20701e-21
+Hierarchy | D=16 | normal | Friedman statistic=86.6410 | Holm p=1.07458e-18
+Hierarchy | D=16 | wet | Friedman statistic=98.0256 | Holm p=6.21132e-21
+Hierarchy | D=16 | very_wet | Friedman statistic=96.7949 | Holm p=8.61992e-21
+Hierarchy | D=32 | severe_drought | Friedman statistic=113.6410 | Holm p=5.26144e-24
+Hierarchy | D=32 | moderate_drought | Friedman statistic=100.0000 | Holm p=2.70025e-21
+Hierarchy | D=32 | normal | Friedman statistic=97.9231 | Holm p=6.21132e-21
+Hierarchy | D=32 | wet | Friedman statistic=83.7949 | Holm p=3.82231e-18
+Hierarchy | D=32 | very_wet | Friedman statistic=97.2564 | Holm p=7.60394e-21
+Hydraulic | D=2 | severe_drought | Friedman statistic=133.0256 | Holm p=5.0689e-28
+Hydraulic | D=2 | moderate_drought | Friedman statistic=135.6923 | Holm p=1.37041e-28
+Hydraulic | D=2 | normal | Friedman statistic=146.6410 | Holm p=7.61345e-31
+Hydraulic | D=2 | wet | Friedman statistic=143.2564 | Holm p=3.82351e-30
+Hydraulic | D=2 | very_wet | Friedman statistic=143.2564 | Holm p=3.82351e-30
+Hydraulic | D=16 | severe_drought | Friedman statistic=110.0256 | Holm p=2.56605e-23
+Hydraulic | D=16 | moderate_drought | Friedman statistic=105.4103 | Holm p=2.06335e-22
+Hydraulic | D=16 | normal | Friedman statistic=111.3077 | Holm p=1.48684e-23
+Hydraulic | D=16 | wet | Friedman statistic=107.8718 | Holm p=6.77969e-23
+Hydraulic | D=16 | very_wet | Friedman statistic=128.3077 | Holm p=4.67539e-27
+Hydraulic | D=32 | severe_drought | Friedman statistic=117.1026 | Holm p=1.00662e-24
+Hydraulic | D=32 | moderate_drought | Friedman statistic=111.7179 | Holm p=1.32119e-23
+Hydraulic | D=32 | normal | Friedman statistic=118.6410 | Holm p=5.35538e-25
+Hydraulic | D=32 | wet | Friedman statistic=118.4872 | Holm p=5.41046e-25
+Hydraulic | D=32 | very_wet | Friedman statistic=129.4103 | Holm p=2.85248e-27
+Hydraulic_Preservation | D=2 | severe_drought | Friedman statistic=126.2337 | Holm p=1.24124e-26
+Hydraulic_Preservation | D=2 | moderate_drought | Friedman statistic=130.1745 | Holm p=2.00064e-27
+Hydraulic_Preservation | D=2 | normal | Friedman statistic=140.6532 | Holm p=1.2905e-29
+Hydraulic_Preservation | D=2 | wet | Friedman statistic=137.9472 | Holm p=4.54916e-29
+Hydraulic_Preservation | D=2 | very_wet | Friedman statistic=141.7255 | Holm p=7.88495e-30
+Hydraulic_Preservation | D=16 | severe_drought | Friedman statistic=109.6154 | Holm p=2.99278e-23
+Hydraulic_Preservation | D=16 | moderate_drought | Friedman statistic=105.4103 | Holm p=2.06335e-22
+Hydraulic_Preservation | D=16 | normal | Friedman statistic=111.3077 | Holm p=1.48684e-23
+Hydraulic_Preservation | D=16 | wet | Friedman statistic=107.8718 | Holm p=6.77969e-23
+Hydraulic_Preservation | D=16 | very_wet | Friedman statistic=128.3077 | Holm p=4.67539e-27
+Hydraulic_Preservation | D=32 | severe_drought | Friedman statistic=117.1026 | Holm p=1.00662e-24
+Hydraulic_Preservation | D=32 | moderate_drought | Friedman statistic=111.7179 | Holm p=1.32119e-23
+Hydraulic_Preservation | D=32 | normal | Friedman statistic=118.6410 | Holm p=5.35538e-25
+Hydraulic_Preservation | D=32 | wet | Friedman statistic=118.4872 | Holm p=5.41046e-25
+Hydraulic_Preservation | D=32 | very_wet | Friedman statistic=129.4103 | Holm p=2.85248e-27
+Embedding_Transport_Preservation | D=2 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=2 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=2 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=2 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=2 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=16 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=16 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=16 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=16 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=16 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=32 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=32 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=32 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=32 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Embedding_Transport_Preservation | D=32 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Uptake | D=2 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Uptake | D=2 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Uptake | D=2 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Uptake | D=2 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Uptake | D=2 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Uptake | D=16 | severe_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Nutrient_Uptake | D=16 | moderate_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Uptake | D=16 | normal | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Uptake | D=16 | wet | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Uptake | D=16 | very_wet | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Nutrient_Uptake | D=32 | severe_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Nutrient_Uptake | D=32 | moderate_drought | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Nutrient_Uptake | D=32 | normal | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Nutrient_Uptake | D=32 | wet | Friedman statistic=140.0769 | Holm p=1.6832e-29
+Nutrient_Uptake | D=32 | very_wet | Friedman statistic=144.9231 | Holm p=1.76343e-30
+Nutrient_Final | D=2 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Final | D=2 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Final | D=2 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Final | D=2 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Final | D=2 | very_wet | Friedman statistic=144.8571 | Holm p=1.76343e-30
+Nutrient_Final | D=16 | severe_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Nutrient_Final | D=16 | moderate_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Final | D=16 | normal | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Final | D=16 | wet | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Final | D=16 | very_wet | Friedman statistic=141.1348 | Holm p=1.0369e-29
+Nutrient_Final | D=32 | severe_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Nutrient_Final | D=32 | moderate_drought | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Nutrient_Final | D=32 | normal | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Nutrient_Final | D=32 | wet | Friedman statistic=140.0769 | Holm p=1.6832e-29
+Nutrient_Final | D=32 | very_wet | Friedman statistic=131.9631 | Holm p=8.40157e-28
+Nutrient_Flux | D=2 | severe_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Flux | D=2 | moderate_drought | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Flux | D=2 | normal | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Flux | D=2 | wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Flux | D=2 | very_wet | Friedman statistic=156.0000 | Holm p=2.00042e-32
+Nutrient_Flux | D=16 | severe_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Nutrient_Flux | D=16 | moderate_drought | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Flux | D=16 | normal | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Flux | D=16 | wet | Friedman statistic=154.0256 | Holm p=3.61475e-32
+Nutrient_Flux | D=16 | very_wet | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Nutrient_Flux | D=32 | severe_drought | Friedman statistic=152.1026 | Holm p=7.48924e-32
+Nutrient_Flux | D=32 | moderate_drought | Friedman statistic=150.2308 | Holm p=1.52751e-31
+Nutrient_Flux | D=32 | normal | Friedman statistic=148.4103 | Holm p=3.26201e-31
+Nutrient_Flux | D=32 | wet | Friedman statistic=140.0769 | Holm p=1.6832e-29
+Nutrient_Flux | D=32 | very_wet | Friedman statistic=144.9231 | Holm p=1.76343e-30
+
+PAIRWISE MODEL COMPARISONS — WILCOXON
+--------------------------------------------------------------------------------
+Total pairwise tests: 495
+Significant after Holm correction: 424
+
+MRE | D=2 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=2 | severe_drought | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=-0.9494
+MRE | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=2 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=2 | moderate_drought | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=-0.9481
+MRE | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=2 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=2 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=2 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9994
+MRE | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=16 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=16 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=16 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=16 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=32 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+MRE | D=32 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+MRE | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=2 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=2 | severe_drought | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=-0.9494
+Raw_MRE | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=2 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.59975e-11 | rank-biserial=-0.9286
+Raw_MRE | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=2 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=2 | normal | Poincare vs Spectral | Holm p=3.10192e-10 | rank-biserial=-0.8994
+Raw_MRE | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=2 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=2 | wet | Poincare vs Spectral | Holm p=3.10192e-10 | rank-biserial=-0.8994
+Raw_MRE | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=2 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=2 | very_wet | Poincare vs Spectral | Holm p=3.10192e-10 | rank-biserial=-0.8994
+Raw_MRE | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=16 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9994
+Raw_MRE | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=16 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=16 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9987
+Raw_MRE | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=16 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=16 | normal | Poincare vs Spectral | Holm p=3.10192e-10 | rank-biserial=-0.8994
+Raw_MRE | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=16 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=16 | wet | Poincare vs Spectral | Holm p=3.75307e-10 | rank-biserial=-0.8935
+Raw_MRE | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=16 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=16 | very_wet | Poincare vs Spectral | Holm p=3.10192e-10 | rank-biserial=-0.8994
+Raw_MRE | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=32 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9942
+Raw_MRE | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=32 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9987
+Raw_MRE | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=32 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=32 | normal | Poincare vs Spectral | Holm p=3.10192e-10 | rank-biserial=-0.8994
+Raw_MRE | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=32 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=32 | wet | Poincare vs Spectral | Holm p=8.27646e-10 | rank-biserial=-0.8780
+Raw_MRE | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Raw_MRE | D=32 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=1.0000
+Raw_MRE | D=32 | very_wet | Poincare vs Spectral | Holm p=3.10192e-10 | rank-biserial=-0.8994
+Raw_MRE | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-0.9994
+Stress | D=2 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-0.9838
+Stress | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-0.9994
+Stress | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-0.9987
+Stress | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-0.9961
+Stress | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-0.9994
+Stress | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-0.9935
+Stress | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Stress | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hierarchy | D=2 | severe_drought | Poincare vs Spectral | Holm p=1.54455e-10 | rank-biserial=0.9137
+Hierarchy | D=2 | severe_drought | MDS vs Spectral | Holm p=1.027e-11 | rank-biserial=0.9701
+Hierarchy | D=2 | moderate_drought | Poincare vs MDS | Holm p=0.00138577 | rank-biserial=-0.5320
+Hierarchy | D=2 | moderate_drought | Poincare vs Spectral | Holm p=4.0489e-09 | rank-biserial=0.8436
+Hierarchy | D=2 | moderate_drought | MDS vs Spectral | Holm p=1.25806e-10 | rank-biserial=0.9182
+Hierarchy | D=2 | normal | Poincare vs Spectral | Holm p=1.34352e-09 | rank-biserial=0.8676
+Hierarchy | D=2 | normal | MDS vs Spectral | Holm p=6.4235e-11 | rank-biserial=0.9318
+Hierarchy | D=2 | wet | Poincare vs Spectral | Holm p=2.06682e-10 | rank-biserial=0.9072
+Hierarchy | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9844
+Hierarchy | D=2 | very_wet | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=0.9487
+Hierarchy | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9974
+Hierarchy | D=16 | severe_drought | Poincare vs Spectral | Holm p=8.53955e-11 | rank-biserial=0.9260
+Hierarchy | D=16 | severe_drought | MDS vs Spectral | Holm p=1.12793e-11 | rank-biserial=0.9682
+Hierarchy | D=16 | moderate_drought | Poincare vs MDS | Holm p=9.26589e-05 | rank-biserial=-0.6105
+Hierarchy | D=16 | moderate_drought | Poincare vs Spectral | Holm p=3.14829e-11 | rank-biserial=0.9461
+Hierarchy | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9857
+Hierarchy | D=16 | normal | Poincare vs MDS | Holm p=0.0230744 | rank-biserial=-0.4359
+Hierarchy | D=16 | normal | Poincare vs Spectral | Holm p=4.7077e-11 | rank-biserial=0.9383
+Hierarchy | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9792
+Hierarchy | D=16 | wet | Poincare vs Spectral | Holm p=1.027e-11 | rank-biserial=0.9701
+Hierarchy | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9851
+Hierarchy | D=16 | very_wet | Poincare vs Spectral | Holm p=1.93559e-11 | rank-biserial=0.9578
+Hierarchy | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9955
+Hierarchy | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hierarchy | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9773
+Hierarchy | D=32 | moderate_drought | Poincare vs MDS | Holm p=0.000175846 | rank-biserial=-0.5923
+Hierarchy | D=32 | moderate_drought | Poincare vs Spectral | Holm p=8.83216e-12 | rank-biserial=0.9734
+Hierarchy | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9903
+Hierarchy | D=32 | normal | Poincare vs MDS | Holm p=0.04634 | rank-biserial=-0.4086
+Hierarchy | D=32 | normal | Poincare vs Spectral | Holm p=8.83216e-12 | rank-biserial=0.9734
+Hierarchy | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hierarchy | D=32 | wet | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=0.9481
+Hierarchy | D=32 | wet | MDS vs Spectral | Holm p=1.31125e-10 | rank-biserial=0.9169
+Hierarchy | D=32 | very_wet | Poincare vs Spectral | Holm p=1.74855e-11 | rank-biserial=0.9598
+Hierarchy | D=32 | very_wet | MDS vs Spectral | Holm p=2.86362e-11 | rank-biserial=0.9500
+Hydraulic | D=2 | severe_drought | Poincare vs MDS | Holm p=7.18349e-09 | rank-biserial=0.8312
+Hydraulic | D=2 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | moderate_drought | Poincare vs MDS | Holm p=3.71201e-08 | rank-biserial=0.7962
+Hydraulic | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | normal | Poincare vs MDS | Holm p=5.91989e-11 | rank-biserial=0.9338
+Hydraulic | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | wet | Poincare vs MDS | Holm p=2.72758e-09 | rank-biserial=0.8526
+Hydraulic | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | very_wet | Poincare vs MDS | Holm p=1.11878e-09 | rank-biserial=0.8715
+Hydraulic | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9968
+Hydraulic | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9961
+Hydraulic | D=16 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9896
+Hydraulic | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9896
+Hydraulic | D=16 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9896
+Hydraulic | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9909
+Hydraulic | D=16 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9981
+Hydraulic | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9981
+Hydraulic | D=16 | very_wet | Poincare vs MDS | Holm p=0.00152448 | rank-biserial=-0.5274
+Hydraulic | D=16 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9994
+Hydraulic | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9987
+Hydraulic | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=32 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9994
+Hydraulic | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9857
+Hydraulic | D=32 | very_wet | Poincare vs MDS | Holm p=2.41735e-05 | rank-biserial=-0.6462
+Hydraulic | D=32 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Hydraulic_Preservation | D=2 | severe_drought | Poincare vs MDS | Holm p=3.3784e-09 | rank-biserial=-0.8535
+Hydraulic_Preservation | D=2 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | severe_drought | MDS vs Spectral | Holm p=8.27646e-10 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | moderate_drought | Poincare vs MDS | Holm p=8.71441e-09 | rank-biserial=-0.8322
+Hydraulic_Preservation | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | moderate_drought | MDS vs Spectral | Holm p=8.05475e-11 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | normal | Poincare vs MDS | Holm p=1.58789e-10 | rank-biserial=-0.9187
+Hydraulic_Preservation | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | normal | MDS vs Spectral | Holm p=1.13123e-10 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | wet | Poincare vs MDS | Holm p=1.72366e-09 | rank-biserial=-0.8624
+Hydraulic_Preservation | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | wet | MDS vs Spectral | Holm p=4.16848e-11 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | very_wet | Poincare vs MDS | Holm p=7.14358e-10 | rank-biserial=-0.8868
+Hydraulic_Preservation | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=16 | severe_drought | Poincare vs Spectral | Holm p=2.55198e-11 | rank-biserial=-0.9526
+Hydraulic_Preservation | D=16 | severe_drought | MDS vs Spectral | Holm p=1.28439e-10 | rank-biserial=-0.9176
+Hydraulic_Preservation | D=16 | moderate_drought | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=-0.9487
+Hydraulic_Preservation | D=16 | moderate_drought | MDS vs Spectral | Holm p=6.05381e-11 | rank-biserial=-0.9331
+Hydraulic_Preservation | D=16 | normal | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=-0.9494
+Hydraulic_Preservation | D=16 | normal | MDS vs Spectral | Holm p=2.90683e-11 | rank-biserial=-0.9494
+Hydraulic_Preservation | D=16 | wet | Poincare vs Spectral | Holm p=1.85271e-10 | rank-biserial=-0.9098
+Hydraulic_Preservation | D=16 | wet | MDS vs Spectral | Holm p=1.88777e-10 | rank-biserial=-0.9091
+Hydraulic_Preservation | D=16 | very_wet | Poincare vs MDS | Holm p=0.00152448 | rank-biserial=0.5281
+Hydraulic_Preservation | D=16 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9812
+Hydraulic_Preservation | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9766
+Hydraulic_Preservation | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=32 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-0.9994
+Hydraulic_Preservation | D=32 | wet | MDS vs Spectral | Holm p=2.86362e-11 | rank-biserial=-0.9500
+Hydraulic_Preservation | D=32 | very_wet | Poincare vs MDS | Holm p=1.95577e-06 | rank-biserial=0.7079
+Hydraulic_Preservation | D=32 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Hydraulic_Preservation | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=2 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=2 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=16 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=16 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=16 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=16 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=32 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Embedding_Transport_Preservation | D=32 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Embedding_Transport_Preservation | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=2 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=16 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9981
+Nutrient_Uptake | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=16 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=16 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9955
+Nutrient_Uptake | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=16 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=16 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9864
+Nutrient_Uptake | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=16 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=16 | wet | Poincare vs Spectral | Holm p=9.0044e-12 | rank-biserial=0.9727
+Nutrient_Uptake | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=16 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=16 | very_wet | Poincare vs Spectral | Holm p=1.29929e-11 | rank-biserial=0.9656
+Nutrient_Uptake | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=32 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9942
+Nutrient_Uptake | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=32 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9909
+Nutrient_Uptake | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=32 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9903
+Nutrient_Uptake | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=32 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=32 | wet | Poincare vs Spectral | Holm p=2.55198e-11 | rank-biserial=0.9526
+Nutrient_Uptake | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Uptake | D=32 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Uptake | D=32 | very_wet | Poincare vs Spectral | Holm p=1.5518e-11 | rank-biserial=0.9623
+Nutrient_Uptake | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=2 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | very_wet | Poincare vs MDS | Holm p=1.8912e-06 | rank-biserial=-1.0000
+Nutrient_Final | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=16 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9890
+Nutrient_Final | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=16 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=16 | moderate_drought | Poincare vs Spectral | Holm p=1.70164e-11 | rank-biserial=0.9604
+Nutrient_Final | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=16 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=16 | normal | Poincare vs Spectral | Holm p=2.48498e-11 | rank-biserial=0.9533
+Nutrient_Final | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=16 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=16 | wet | Poincare vs Spectral | Holm p=2.69035e-11 | rank-biserial=0.9513
+Nutrient_Final | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=16 | very_wet | Poincare vs MDS | Holm p=6.64859e-09 | rank-biserial=-1.0000
+Nutrient_Final | D=16 | very_wet | Poincare vs Spectral | Holm p=4.69627e-11 | rank-biserial=0.9508
+Nutrient_Final | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=32 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=32 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9942
+Nutrient_Final | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=32 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=32 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9890
+Nutrient_Final | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=32 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9766
+Nutrient_Final | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=32 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Final | D=32 | wet | Poincare vs Spectral | Holm p=4.99932e-11 | rank-biserial=0.9370
+Nutrient_Final | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Final | D=32 | very_wet | Poincare vs MDS | Holm p=9.0577e-09 | rank-biserial=-1.0000
+Nutrient_Final | D=32 | very_wet | Poincare vs Spectral | Holm p=2.90683e-11 | rank-biserial=0.9807
+Nutrient_Final | D=32 | very_wet | MDS vs Spectral | Holm p=1.65731e-11 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=2 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=2 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=2 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=2 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=2 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=2 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=16 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=16 | severe_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9981
+Nutrient_Flux | D=16 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=16 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=16 | moderate_drought | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9994
+Nutrient_Flux | D=16 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=16 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=16 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9994
+Nutrient_Flux | D=16 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=16 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=16 | wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9994
+Nutrient_Flux | D=16 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=16 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=16 | very_wet | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9961
+Nutrient_Flux | D=16 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=32 | severe_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=32 | severe_drought | Poincare vs Spectral | Holm p=1.08315e-10 | rank-biserial=0.9215
+Nutrient_Flux | D=32 | severe_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=32 | moderate_drought | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=32 | moderate_drought | Poincare vs Spectral | Holm p=9.62067e-12 | rank-biserial=0.9714
+Nutrient_Flux | D=32 | moderate_drought | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=32 | normal | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=32 | normal | Poincare vs Spectral | Holm p=7.56347e-12 | rank-biserial=0.9896
+Nutrient_Flux | D=32 | normal | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=32 | wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=32 | wet | Poincare vs Spectral | Holm p=2.52273e-09 | rank-biserial=0.8546
+Nutrient_Flux | D=32 | wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+Nutrient_Flux | D=32 | very_wet | Poincare vs MDS | Holm p=7.56347e-12 | rank-biserial=-1.0000
+Nutrient_Flux | D=32 | very_wet | Poincare vs Spectral | Holm p=3.75446e-09 | rank-biserial=0.8455
+Nutrient_Flux | D=32 | very_wet | MDS vs Spectral | Holm p=7.56347e-12 | rank-biserial=1.0000
+
+DIMENSION COMPARISONS
+--------------------------------------------------------------------------------
+Significant dimension tests after Holm: 119
+
+ENVIRONMENT COMPARISONS
+--------------------------------------------------------------------------------
+Significant environment tests after Holm: 61
+
+ENVIRONMENTAL TRENDS
+--------------------------------------------------------------------------------
+Significant trends after Holm: 61
+
+MRE | Poincare | D=2 | mean Spearman rho=-0.5282 | Holm p=8.14792e-10
+MRE | Poincare | D=16 | mean Spearman rho=-0.5308 | Holm p=2.17496e-10
+MRE | Poincare | D=32 | mean Spearman rho=-0.5256 | Holm p=5.46353e-11
+MRE | Spectral | D=32 | mean Spearman rho=-0.2897 | Holm p=0.000553035
+Raw_MRE | Poincare | D=2 | mean Spearman rho=-0.3154 | Holm p=0.00140725
+Raw_MRE | Poincare | D=16 | mean Spearman rho=-0.2808 | Holm p=0.00193656
+Raw_MRE | Poincare | D=32 | mean Spearman rho=-0.2910 | Holm p=0.0012703
+Raw_MRE | MDS | D=2 | mean Spearman rho=-0.2128 | Holm p=0.0176266
+Raw_MRE | Spectral | D=32 | mean Spearman rho=-0.2103 | Holm p=0.0313753
+Stress | Spectral | D=32 | mean Spearman rho=-0.2808 | Holm p=0.00125759
+Hierarchy | Spectral | D=2 | mean Spearman rho=-0.2487 | Holm p=0.00532409
+Physical_Hydraulic | Poincare | D=2 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | Poincare | D=16 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | Poincare | D=32 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | MDS | D=2 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | MDS | D=16 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | MDS | D=32 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | Spectral | D=2 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | Spectral | D=16 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Physical_Hydraulic | Spectral | D=32 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | Poincare | D=2 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | Poincare | D=16 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | Poincare | D=32 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | MDS | D=2 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | MDS | D=16 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | MDS | D=32 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | Spectral | D=2 | mean Spearman rho=-1.0000 | Holm p=1.0098e-16
+Hydraulic | Spectral | D=16 | mean Spearman rho=-0.9949 | Holm p=3.75918e-16
+Hydraulic | Spectral | D=32 | mean Spearman rho=-0.9923 | Holm p=7.57813e-16
+Hydraulic_Preservation | Poincare | D=16 | mean Spearman rho=0.2731 | Holm p=0.00193656
+Hydraulic_Preservation | Poincare | D=32 | mean Spearman rho=0.2628 | Holm p=0.00174654
+Embedding_Transport_Preservation | Poincare | D=2 | mean Spearman rho=0.5423 | Holm p=3.14623e-09
+Embedding_Transport_Preservation | Poincare | D=16 | mean Spearman rho=0.2833 | Holm p=0.00125759
+Embedding_Transport_Preservation | Poincare | D=32 | mean Spearman rho=0.3038 | Holm p=0.000177683
+Nutrient_Uptake | Poincare | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | Poincare | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | Poincare | D=32 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | MDS | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | MDS | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | MDS | D=32 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | Spectral | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | Spectral | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Uptake | Spectral | D=32 | mean Spearman rho=0.9936 | Holm p=3.75918e-16
+Nutrient_Final | Poincare | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Final | Poincare | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Final | Poincare | D=32 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Final | MDS | D=2 | mean Spearman rho=0.9122 | Holm p=5.07938e-14
+Nutrient_Final | MDS | D=16 | mean Spearman rho=0.9239 | Holm p=1.20521e-13
+Nutrient_Final | MDS | D=32 | mean Spearman rho=0.9437 | Holm p=1.41969e-13
+Nutrient_Final | Spectral | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Final | Spectral | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Final | Spectral | D=32 | mean Spearman rho=0.9936 | Holm p=3.75918e-16
+Nutrient_Flux | Poincare | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | Poincare | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | Poincare | D=32 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | MDS | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | MDS | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | MDS | D=32 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | Spectral | D=2 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | Spectral | D=16 | mean Spearman rho=1.0000 | Holm p=1.0098e-16
+Nutrient_Flux | Spectral | D=32 | mean Spearman rho=0.9936 | Holm p=3.75918e-16
+
+IMPORTANT INTERPRETATION NOTE
+--------------------------------------------------------------------------------
+Statistical significance does not by itself establish biological superiority. Results should be interpreted together with effect sizes, descriptive statistics, model behavior across dimensions, and environmental patterns.
